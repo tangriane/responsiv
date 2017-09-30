@@ -1,4 +1,7 @@
-/********RESET***********/
+/********RESET**********
+font-family: 'Slabo 27px', serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;*/
 *{
 	margin:0; 
 	padding: 0;
@@ -7,7 +10,7 @@
 	outline: none;
 	font-weight: 300;
 	box-sizing: ;
-	font-family: sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 body{
 	background-color: #f5f5f5;
@@ -133,3 +136,80 @@ img{
 	color:#130400 ;
 	margin-top: 2%;
 }
+
+/**********SERVICO***************/
+.servico  {
+	width: 100%;
+	float: left;
+	padding: 3% 4%;
+}
+.servico {
+	width: 100%;
+	background-color: #fff;
+	text-align: left;
+	border-radius: 7px;
+	margin-bottom: 3%;
+}
+.servico img{
+	border-radius: 7px 7px 0 0;
+}
+
+.inner {
+	padding: 7%;
+}
+.inner a {
+	font-size: 1.5em;
+	color: #130400;
+	font-weight: 700;
+}
+.inner h4{
+	font-size: 1.2em;
+	color: #130400;
+	margin-top: 2%;
+
+}
+.inner p {
+	margin-top: 6%;
+	color: #130400;
+	line-height: 1.5em;
+
+}
+/**********NEWSLETTER***************/
+
+.newsletter{
+	width: 100%;
+	float: left;
+	text-align: center;
+	padding: 3% 4%;
+	background-color: #130400;
+}
+.newsletter h2{
+	font-size: 1.5em;
+	color: #fff;
+	font-weight: 700;
+}
+.newsletter h3{
+	color: #fff;
+}
+.newsletter form{
+	margin-top: 2%; 
+}
+.newsletter input{
+	width: 100%;
+	background-color: #130400;
+	color: #fff;
+	border: 1px solid rgba(255,255,255,0.3);
+	padding: 5%; 
+	border-radius: 5px;
+
+}
+.newsletter button {
+	width: 100%;
+	background-color: #fff;
+	color: #130400;
+	padding: 5%;
+	cursor:pointer;
+	margin-top: 2%;
+	border-radius: 5px;
+}
+/**********RODAPE***************/
