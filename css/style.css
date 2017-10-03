@@ -24,14 +24,31 @@ ul{
 img{
 	max-width: 100%;
 }
-
-/**********Cabecalho*************/
-
-.cabecalho{
+/************container**************/
+.container{
 	width: 100%;
 	float: left;
 	padding: 3% 4%;
+	text-align: center;
 }
+/************bg colors**************/
+.bg-gradient{
+	background: linear-gradient(to right, #ce2e3c, #da6709);
+}
+.bg-black{
+	background-color:#130400;
+
+}
+.bg-white{
+	background-color: #fff;
+}
+/************HELPERS**************/
+.radius{
+	border-radius: 7px;
+}
+/**********Cabecalho*************/
+
+
 .logo{
 	width: 56px;
 	height: 56px;
@@ -47,7 +64,7 @@ img{
 	color: #fff;
 	border-radius: 56px;
 	cursor:pointer;
-	background: linear-gradient(to right, #ce2e3c, #da6709);
+	
 }
 
 /*******MENU***********/
@@ -90,10 +107,7 @@ img{
 /*****BANNER******/
 
 .banner{
-	width: 100%;
-	float:left;
-	text-align: center;
-	padding: 3% 4%;
+	
 	background: url(../img/bg.jpg) no-repeat fixed;
 }
 .title{
@@ -108,6 +122,7 @@ img{
 	font-size: 1.5em;
 	color:#fff;
 }
+
 .buttons{
 	width: 100%;
 	margin-top: 2%;
@@ -115,39 +130,34 @@ img{
 .buttons i{
 	float: right;
 }
-.btn-cadastrar{
+.btn{
 	width: 100%;
 	font-size: 1.5em;
 	text-align: left; 
 	cursor: pointer;
 	padding: 5%;
-	border-radius: 10px;
-	background-color: #fff;
+	
+	
+}
+.btn-cadastrar{
+	
+	
 	color: #130400;
 }
 .btn-sobre{
-	width: 100%;
-	font-size: 1.5em;
-	text-align: left; 
-	cursor: pointer;
-	padding: 5%;
-	border-radius: 10px;
-	background-color:#130400;
-	color:#130400 ;
+	
+	
+	color:#fff;
 	margin-top: 2%;
 }
 
 /**********SERVICO***************/
-.servico  {
-	width: 100%;
-	float: left;
-	padding: 3% 4%;
-}
+
 .servico {
 	width: 100%;
-	background-color: #fff;
+	
 	text-align: left;
-	border-radius: 7px;
+	
 	margin-bottom: 3%;
 }
 .servico img{
@@ -176,13 +186,7 @@ img{
 }
 /**********NEWSLETTER***************/
 
-.newsletter{
-	width: 100%;
-	float: left;
-	text-align: center;
-	padding: 3% 4%;
-	background-color: #130400;
-}
+
 .newsletter h2{
 	font-size: 1.5em;
 	color: #fff;
@@ -196,20 +200,154 @@ img{
 }
 .newsletter input{
 	width: 100%;
-	background-color: #130400;
 	color: #fff;
 	border: 1px solid rgba(255,255,255,0.3);
 	padding: 5%; 
-	border-radius: 5px;
+	
 
 }
 .newsletter button {
 	width: 100%;
-	background-color: #fff;
 	color: #130400;
 	padding: 5%;
 	cursor:pointer;
 	margin-top: 2%;
-	border-radius: 5px;
+	
 }
 /**********RODAPE***************/
+
+.social-icons a {
+	font-size: 1.5em;
+	color: rgba(255,255,255,0.7);
+	margin-right: 3%;
+}
+.social-icons a:last-child {
+	margin-right: 0; /*zerando a margin do ultimo elemento**/
+}
+.social-icons a:hover{
+	color: rgb(255,255,255);
+}
+.copyright {
+	margin-top: 2%;
+	color: rgba(255,255,255,0.7);
+}
+/**MOBILE FIRST*/
+@media screen and (min-width: 480px){
+	.logo{
+	width: 248px;
+	background: url(/img/logo.png) center center/214px no-repeat;
+	font-size:0;
+	}	
+	.btn{
+		font-size: 2em;
+	}
+}
+/**TABLET*/
+@media screen and (min-width: 768px){
+	.servico{
+		width: 49%;
+		float: left;
+		margin-right: 2%;
+	}
+	.servico:nth-child(2){ /*esse nth-child vai aplicar em um determinado elemento, nesse caso segundo elemento*/
+		margin-right: 0;
+	}
+	.newsletter h2{
+		font-size: 2em;
+	}
+	.newsletter h3{
+		font-size: 1.5em;
+	}
+	.newsletter input{
+		width: 70%;
+		padding: 2%;
+		float: left;
+		margin-right: 1%;
+	}
+	.newsletter button{
+		width: 29%;
+		padding: 2%;
+		float: right;
+		margin-top: 0;
+	}
+}
+/**TABLET e descktop*/
+
+@media screen and (min-width: 960px){
+	.title{
+		width: 70%;
+		float: left;
+		text-align: left;
+	}
+	.title h2 {
+		font-size: 3em;
+	}
+	.title h3{
+		font-size: 2em;
+	}
+	.buttons{
+		width: 30%;
+		float: right;
+		margin-top: 0;
+	}
+	.servico {
+		width: 33%;
+		
+
+	}
+	.servico:nth-child(2){ /*esse nth-child vai aplicar em um determinado elemento, nesse caso segundo elemento*/
+		margin-right: 2%;
+	}
+	.servico:nth-child(3){ /*esse nth-child vai aplicar em um determinado elemento, nesse caso segundo elemento*/
+		margin-right: 2%;
+	}
+	.newsletter input {
+		width: 60%;
+		float: none;
+
+	}
+	.newsletter button {
+		width: 20%;
+		float: none;
+		
+	}
+}
+/**LARGE DEVICES - WIDE SCREENS*/
+@media screen and (min-width: 960px){
+	.btn-menu {
+		display: none;
+
+	}
+	.btn-close{
+		display: none;
+	}
+	.menu {
+		width: auto;
+		height: 56px;
+		line-height: 56px;
+		float: right;
+		background-color: #f5f5f5;
+		display: block !important;
+		position: static;
+	}
+	.menu li{
+		padding: 0;
+		float: left;
+	}
+	.menu li a {
+		color: #130400;
+		font-size: 1em; 
+		padding: 15px; 
+	}
+	.menu li a:houver{
+		border: none;
+		color: #da6709;
+	}
+}
+/*
+screen 
+para monitores ou dispositivos com telas coloridas e resoluçao adequada 
+print
+Para impressoras. Muito usado para dar uma versão de impressao do sistema
+ */
+
